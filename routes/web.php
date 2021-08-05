@@ -15,9 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes(); //comentario en la ruta
+Auth::routes(); //otro comentario en la ruta
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home'); //nuevo comentario
 
-Route::get('/my-books', 'BookController@index')->name('my-books'); //va a perfil de libros del usuario
-Route::get('/add-book', 'BookController@storage')->name('add-book'); //va a guardado y retorna a la vista anterior
+Route::get('/my-books', 'BookController@index')->name('my-books'); //otro comentario
+Route::get('/add-book', 'BookController@storage')->name('add-book'); //cuarto comentario
