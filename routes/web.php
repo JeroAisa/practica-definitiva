@@ -19,5 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/my-books', 'BookController@index')->name('my-books');
-Route::get('/add-book', 'BookController@storage')->name('add-book');
+Route::get('/my-books', 'BookController@index')->name('my-books'); //va a perfil de libros del usuario
+Route::get('/add-book', 'BookController@storage')->name('add-book'); //va a guardado y retorna a la vista anterior
